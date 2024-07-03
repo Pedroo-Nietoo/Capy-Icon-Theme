@@ -1,0 +1,47 @@
+{
+  "iconDefinitions": {
+    "folder": {
+      "iconPath": "../resources/generic-folders/folder.svg"
+    },
+    "file": {
+      "iconPath": "../resources/generic-files/ts.svg"
+    },
+    "nest_controller": {
+      "iconPath": "../resources/files/nest-controller.svg"
+    },
+    "nest_guard": {
+      "iconPath": "../resources/files/nest-guard.svg"
+    },
+    "markdown": {
+      "iconPath": "../resources/generic-files/markdown.svg"
+    },
+    "license": {
+      "iconPath": "../resources/generic-files/license.svg"
+    },
+    "node": {
+      "iconPath": "../resources/files/node.svg"
+    },
+    "webpack": {
+      "iconPath": "../resources/files/webpack.svg"
+    },
+  },
+  "folder": "folder",
+  "file": "file",
+  "fileExtensions": {
+    "js": "_file",
+    "ts": "_file",
+    "controller.ts": "nest_controller",
+    "guard.ts": "nest_guard",
+    "md": "markdown",
+  },
+  "fileNames": {
+    "LICENSE.txt": "license",
+    "package.json": "node",
+    "package-lock.json": "node",
+    "webpack.*.js": "webpack",
+  },
+  "folderNames": {
+    "src": "_folder",
+    "dist": "_folder"
+  },
+}
