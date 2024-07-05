@@ -3,11 +3,35 @@
     "folder": {
       "iconPath": "../resources/generic-folders/folder.svg"
     },
+    "ignore": {
+      "iconPath": "../resources/generic-files/ignore.svg"
+    },
     "file": {
       "iconPath": "../resources/generic-files/ts.svg"
     },
+    "_file": {
+      "iconPath": "../resources/generic-files/s.svg"
+    },
+    "html": {
+      "iconPath": "../resources/generic-files/code-orange.svg"
+    },
+    "css": {
+      "iconPath": "../resources/generic-files/brackets-blue.svg"
+    },
+    "tsconfig": {
+      "iconPath": "../resources/generic-files/tsconfig.svg"
+    },
+    "json": {
+      "iconPath": "../resources/generic-files/brackets-yellow.svg"
+    },
     "nest_controller": {
       "iconPath": "../resources/files/nest-controller.svg"
+    },
+    "nest_service": {
+      "iconPath": "../resources/files/nest-service.svg"
+    },
+    "nest_module": {
+      "iconPath": "../resources/files/nest.svg"
     },
     "nest_guard": {
       "iconPath": "../resources/files/nest-guard.svg"
@@ -28,17 +52,24 @@
   "folder": "folder",
   "file": "file",
   "fileExtensions": {
+    "ts": "file",
     "js": "_file",
-    "ts": "_file",
+    "json": "json",
+    "html": "html",
+    "css": "css",
     "controller.ts": "nest_controller",
+    "service.ts": "nest_service",
+    "module.ts": "nest_module",
     "guard.ts": "nest_guard",
     "md": "markdown",
+
   },
   "fileNames": {
     "LICENSE.txt": "license",
     "package.json": "node",
     "package-lock.json": "node",
-    "webpack.*.js": "webpack",
+    "webpack.config.js": "webpack",
+    "tsconfig.json": "tsconfig",
   },
   "folderNames": {
     "src": "_folder",
