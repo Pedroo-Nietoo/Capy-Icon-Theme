@@ -4,7 +4,7 @@
   "description": "A simple icon and folder theme for Visual Studio Code",
   "publisher": "Pedro Nieto",
   "version": "0.0.1",
-  "icon": "icons/symbols.png",
+  "icon": "resources/icons/symbols.png",
   "engines": {
     "vscode": "^1.90.0"
   },
