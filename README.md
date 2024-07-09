@@ -1,6 +1,6 @@
-# nieto-icon-theme README
+# Capy Icon Theme
 
-Icon and folder file theme
+A simple icon and folder theme for Visual Studio Code
 
 ## Features
 
