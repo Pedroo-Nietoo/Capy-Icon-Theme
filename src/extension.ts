@@ -1,26 +1,29 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+const vscode = require("vscode");
+const { monitorConfigChanges } = require("./lib/change-listener");
+const { syncOriginal } = require("./lib/theme");
+const { log } = require("./lib/log");
+/**
+ * @param {vscode.ExtensionContext} context
+ */
+async function activate(context: any) {
+	log.info("pedronieto.capy-theme activated");
+	await syncOriginal();
+	monitorConfigChanges();
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
+	vscode.workspace.onDidChangeConfiguration(monitorConfigChanges);
+	log.info(monitorConfigChanges);
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "nieto-icon-theme" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('nieto-icon-theme.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Nieto Icon Theme!');
+	vscode.window.onDidChangeWindowState((state: any) => {
+		if (state.focused) {
+			monitorConfigChanges();
+		}
 	});
-
-	context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
-export function deactivate() {}
+function deactivate() {}
+
+// eslint-disable-next-line no-undef
+module.exports = {
+	activate,
+	deactivate,
+};

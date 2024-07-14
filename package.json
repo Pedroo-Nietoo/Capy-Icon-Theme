@@ -4,7 +4,7 @@
   "description": "A simple icon and folder theme for Visual Studio Code",
   "publisher": "Pedro Nieto",
   "version": "0.0.1",
-  "icon": "resources/icons/icon.png",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -20,19 +20,35 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "settings": [
-      {
-        "command": "nieto-icon-theme.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "iconThemes": [
       {
         "id": "capy-icon-theme",
         "label": "Capy Icon Theme",
-        "path": "./themes/icon-theme.json"
+        "path": "./src/icon-theme.json",
+				"_watch": true
       }
-    ]
+    ],
+    "configuration": {
+			"type": "object",
+			"title": "Capy Theme",
+			"properties": {
+				"capy-theme.hidesExplorerArrows": {
+					"type": "boolean",
+					"default": false,
+					"description": "Hide arrow icons in the explorer section."
+				},
+				"capy-theme.folders.associations": {
+					"type": "object",
+					"default": {},
+					"description": "With this configuration can customize the folder icons."
+				},
+				"capy-theme.files.associations": {
+					"type": "object",
+					"default": {},
+					"description": "With this configuration can customize the files icons."
+				}
+			}
+    }
   },
   
   "scripts": {
