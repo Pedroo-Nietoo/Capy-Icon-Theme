@@ -4,7 +4,7 @@ const channel = vscode.window.createOutputChannel("Capy Theme");
 const log = {
 	info: (...args: any) => {
 		const time = new Date().toLocaleTimeString();
-		channel.appendLine([INFO ${time}] ${args.join(" ")});
+		channel.appendLine(`[INFO ${time}] ${args.join(" ")}`);
 	},
 };
 

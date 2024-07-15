@@ -2,7 +2,7 @@
   "name": "capy-icon-theme",
   "displayName": "Capy Icon Theme",
   "description": "A simple icon and folder theme for Visual Studio Code",
-  "publisher": "Pedro Nieto",
+  "publisher": "@Pedroo-Nietoo",
   "version": "0.0.1",
   "icon": "icon.png",
   "engines": {
