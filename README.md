@@ -2,6 +2,8 @@
 
 A simple icon and folder theme for Visual Studio Code
 
+You can see all the icons by checking the [Figma](https://www.figma.com/design/wWp8O83Dm89LRtq0jkYlVG/Capy-File-Icons?node-id=20521-84115&node-type=CANVAS&t=koSg0b0gTnVjCQqP-0) project.
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
@@ -9,6 +11,7 @@ Describe specific features of your extension including screenshots of your exten
 For example if there is an image subfolder under your extension project workspace:
 
 \!\[feature X\]\(images/feature-x.png\)
+
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
